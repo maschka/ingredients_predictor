@@ -47,7 +47,7 @@ def extract_ingredients(ingredients):
         ingredient = ingredient.replace('  ',' ')
         #some ingredient lists include sections (ie. For the sauce:) we want to get rid of these
         if 'for ' not in ingredient:
-            if ingredient != '':
+            if ingredient != '' and ingredient != ' ':
                 ingredients_cleaned.append(ingredient)
     return ingredients_cleaned
 
